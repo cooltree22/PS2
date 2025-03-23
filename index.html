@@ -5,60 +5,15 @@
 </head>
 <body>
 
-<dialog id="messageBox">
+<style> #messageBox, #emu { border: 2px solid gray; padding: 15px; width: 300px; } </style> <script> function showMessage(id) { var dialog = document.getElementById(id); dialog.showModal(); } </script>
+<button onclick="showMessage('messageBox')">Original Hardware</button>
 
-<button onclick="document.getElementById('messageBox').close()">Close</button>‎                      
+<dialog id="messageBox"> <button onclick="document.getElementById('messageBox').close()">Close</button> To play these games on original hardware, follow this guide to jailbreak your PS2. <a href="https://www.psx-place.com/threads/tutorial-the-great-ps2-aio-guide.30219/">Playstation 2 Modding Guide</a> </dialog>
+<button onclick="showMessage('emu')">Emulated Hardware</button>
 
-To play these games on original hardware
-follow this guide to jailbreak your PS2
-<a href="https://www.psx-place.com/threads/tutorial-the-great-ps2-aio-guide.30219/">Playstation 2 Modding Guide</a> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
-
-</dialog>
-
-<style>
-  #messageBox {
-    border: 2px solid gray;
-    padding: 15px;
-    width: 300px;
-  }
-</style>
-
-<script>
-  function showMessage() {
-    var dialog = document.getElementById('messageBox');
-    dialog.showModal();
-  }
-</script>
-
-<button onclick="showMessage()">Original Hardware</button>
+<dialog id="emu"> <button onclick="document.getElementById('emu').close()">Close</button> To play these games on emulated hardware, download PCSX2 and the PS2 Bios Files. <a href="https://pcsx2.net/downloads/">PCSX2 Download</a> <a href="https://file.psbios.com/file/securelinks/ps2-bios-all-bios.zip">Download Bios</a> </dialog>
 
 
-<dialog id="emu">
-<button onclick="document.getElementById('emu').close()">Close</button>‎   
-To play these games on Emulated Hardware
-Download PCSX2 and the PS2 Bios Files
-<a href="https://pcsx2.net/downloads/">PCSX2 Download</a>
-<a href="https://file.psbios.com/file/securelinks/ps2-bios-all-bios.zip">Download Bios</a>
-‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
-
-</dialog>
-
-<style>
-  #emu {
-    border: 2px solid gray;
-    padding: 15px;
-    width: 300px;
-  }
-</style>
-
-<script>
-  function showMessage() {
-    var dialog = document.getElementById('emu');
-    dialog.showModal();
-  }
-</script>
-
-<button onclick="showMessage()">Emulator</button>
     <ul>
         <li>
             Playstation 2 Games
@@ -119,6 +74,14 @@ Bully (Canis Canem Edit) (Eur) ‎
 
 <button onclick="downloadFile('https://dl.mprd.se/happyTjuaOAO11j4lf94cbvkNAwkm4nkkj/Playstation2Europe/isos/Canis%20Canem%20Edit%20(Europe,%20Australia)%20(En,Fr,De,Es,It).7z')">Emuparadise</button>
 
+    </li>  
+<li> 
+Family Guy: Video Game! (Eur) ‎ 
+<button onclick="downloadFile('https://vimm.net/vault/69033')">Vimm</button>
+<button onclick="downloadFile('https://dl.coolrom.com.au/dl/70011/4RvQflyKk8Zq6Ly5Rhsicg/1742748016/')">CoolRom</button>
+
+<button onclick="downloadFile('https://dl.mprd.se/happyTjuaOAO11j4lf94cbvkNAwkm4nkkj/pspisos/I_GRIFFIN_ITALIAN_PSP-DvB.rar">Emuparadise</button>
+
 
 
 
@@ -149,6 +112,9 @@ Bully (Canis Canem Edit) (Eur) ‎
             link.click();
             document.body.removeChild(link);
         }
+
+
+    </script>
 
 
     </script>
