@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Tree with Download Buttons</title>
+</head>
+<body>
+    <ul>
+        <li>
+            Playstation 2 Games
+            <ul>
+                <li>
+                    Manhunt Europe
+                    <button onclick="downloadFile('https://dl2.vimm.net/?mediaId=63252')">Download</button>
+                </li>
+                <li>
+                    Manhunt 2 Europe
+                    <button onclick="downloadFile('https://dl2.vimm.net/?mediaId=64163')">Download</button>
+                </li>
+            </ul>
+        </li>
+        <li>
+            Folder 2
+            <ul>
+                <li>
+                    Hitman 2 - Silent Assasin German
+                    <button onclick="downloadFile('https://dl2.vimm.net/?mediaId=64060')">Download</button>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        function downloadFile(url) {
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = url.split('/').pop();
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
