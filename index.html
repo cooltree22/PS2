@@ -61,7 +61,7 @@
 <dialog id="messageBox">
 
 <button onclick="document.getElementById('messageBox').close()">Close</button>‎                      
-   ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎             ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎             ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎             ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎             ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎             ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎             ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎          
+
 To play these games on original hardware
 follow this guide to jailbreak your PS2
 <a href="https://www.psx-place.com/threads/tutorial-the-great-ps2-aio-guide.30219/">Playstation 2 Modding Guide</a> ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
@@ -84,6 +84,35 @@ follow this guide to jailbreak your PS2
 </script>
 
 <button onclick="showMessage()">Original Hardware</button>
+
+
+<dialog id="emu">
+<button onclick="document.getElementById('emu').close()">Close</button>‎   
+To play these games on Emulated Hardware
+Download PCSX2 and the PS2 Bios Files
+<a href="https://pcsx2.net/downloads/">PCSX2 Download</a>
+<a href="https://file.psbios.com/file/securelinks/ps2-bios-all-bios.zip">Download Bios</a>
+‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
+
+</dialog>
+
+<style>
+  #emu {
+    border: 2px solid gray;
+    padding: 15px;
+    width: 300px;
+  }
+</style>
+
+<script>
+  function showMessage() {
+    var dialog = document.getElementById('emu');
+    dialog.showModal();
+  }
+</script>
+
+<button onclick="showMessage()">Emulator</button>
+
 
 
 
