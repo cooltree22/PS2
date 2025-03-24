@@ -1,1 +1,1 @@
-little website to share my favorite roms
+little website to share my favorite Games
