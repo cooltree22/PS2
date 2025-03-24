@@ -14,11 +14,28 @@
 <button onclick="document.getElementById('messageBox').showModal()">Libraries</button>
 
 
-  
+  <a href="https://cooltree22.github.io/PS2/" id="homeButton">Home</a>
        
-      
-           
+            <style>
 
+#homeButton {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 0 0 0 5px;
+}
+</style>
+           
+<script>
+document.getElementById('homeButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
 
 <br>
 </br>
