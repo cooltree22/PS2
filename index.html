@@ -251,15 +251,14 @@ Lego Star Wars - The Video Game (Eur)‎
 
 
 
-    <script>
-        function downloadFile(url) {
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = url.split('/').pop();
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-
-
-    </script>
+ <script>
+function downloadFile(url) {
+    const link = document.createElement('a');
+    link.target = '_blank'; // Open the link in a new tab
+    link.href = url;
+    link.download = url.split('/').pop();
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
