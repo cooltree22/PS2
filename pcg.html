@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    html {
+    scroll-behavior: smooth;
+}
 <head>
     <title>PC collection | YourRoms2U</title>
 </head>
@@ -31,10 +34,12 @@
 </style>
            
 <script>
-document.getElementById('homeButton').addEventListener('click', function(event) {
-    event.preventDefault();
+<a href="#" id="homeButton" onclick="scrollToTop()">Home</a>
+
+<script>
+function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+}
 </script>
 
 <br>
