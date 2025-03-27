@@ -11,8 +11,31 @@
     color: #4FFF9E;
 }
     </style>
+    <style>
+.img-wrap {
+  position: relative;
+  display: inline-block;
+}
 
-  
+.img-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap:hover .img-description {
+  visibility: visible;
+  opacity: 1;
+}
+  </style>
+    
 <dialog id="messageBox">
   <p>If the games give you any error messages download the <a href="https://ouo.io/OSjxptr">_redist</a> folder, install all and run the game again </p>
 </dialog>
