@@ -186,39 +186,52 @@ Kinito Pet
              
     </li>
     
-<li> 
-    Tomb Raider I
-     <button onclick="downloadFile('https://ouo.io/AOkNdah')">Media Fire</button>
-      <button onclick="downloadFile('https://ouo.io/6uoGSt')">MEGA</button>
-</li>
+     <form>
+        <select id="tomb" onchange="openLink()">
+            <option value="https://cooltree22.github.io/PS2/pcg.html">Tomb Raider Series</option>
 
-    <li> 
-    Tomb Raider II
-     <button onclick="downloadFile('https://ouo.io/1sjgKb')">Media Fire</button>
-    <button onclick="downloadFile('https://ouo.io/ZVzia8T')">MEGA</button>
-    </li>
-<li>
-            Tomb Raider III
-     <button onclick="downloadFile('https://ouo.io/wj7pih')">Media Fire</button>
-         <button onclick="downloadFile('https://ouo.io/2VvJvj')">MEGA</button>
-</li>
-    
-<li> 
-    Tomb Raider IV - The Last Revelations
-     <button onclick="downloadFile('https://ouo.io/V0oEqh')">Media Fire</button>
-     
-</li>
+<option value="https://ouo.io/AOkNdah">Tomb Raider 1 (Media Fire)</option>
+<option value="https://ouo.io/6uoGSt">Tomb Raider 1 (MEGA)</option>
+<option value="https://ouo.io/1sjgKb">Tomb Raider 2 (Media Fire)</option>
+<option value="https://ouo.io/ZVzia8T">Tomb Raider 2 (MEGA)</option>
+<option value="https://ouo.io/wj7pih">Tomb Raider 3 (Media Fire)</option>
+<option value="https://ouo.io/2VvJvj">Tomb Raider 3 (MEGA)</option>
+<option value="https://ouo.io/V0oEqh">Tomb Raider 4 - The last Revelations (Media Fire)</option>
+<option value="https://ouo.io/5qNYum">Tomb Raider - The Angel of Darkness (Media Fire)</option>
+<option value="https://ouo.io/O9DSex">Tomb Raider 1-3 Remastered (Media Fire)</option>
+<option value="https://ouo.io/5tZWgKg">Tomb Raider 1-3 Remastered (MEGA)</option>
 
-    <li>
-        Tomb Raider - The Angel of Darkness 
-        <button onclick="downloadFile('https://ouo.io/5qNYum')">Media Fire</button>
-    </li>
 
-        <li>
-        Tomb Raider I-III Remastered
-        <button onclick="downloadFile('https://ouo.io/O9DSex')">Media Fire</button>
-             <button onclick="downloadFile('https://ouo.io/5tZWgKg')">MEGA</button>
-    </li>
+                       
+        </select>
+    </form>
+<style>
+#tomb {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  width: 300px; /* Increase the width to fit longer text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#tomb option {
+  padding: 5px;
+}
+
+#tomb option:hover {
+  background-color: #f1f1f1;
+}
+</style>
+
+    <script>
+        function openLink() {
+            var dropdown = document.getElementById("tomb");
+            var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+            window.open(selectedValue, '_blank');
+        }
+    </script>
+
     
     
 <br>
