@@ -116,41 +116,32 @@ Untitled Goose Game
 Kinito Pet
                     <button onclick="downloadFile('https://ouo.io/3uklxsI')">Media Fire</button>
 
-</li>
+  <form>
+        <select id="myDropdown" onchange="openLink()">
+            <option value="">Five Nights at Freddys Series</option>
+            <option value="https://ouo.io/fCZ9l3">Five Nights at Freddys (Media Fire)</option>
+            <option value="https://ouo.io/yoD5Av">Five Nights at Freddys (MEGA)</option>
+            <option value="https://ouo.io/IrcrYUv">Five Nights at Freddys 2 (Media Fire)</option>
+            <option value="https://ouo.io/3WcdGTP">Five Nights at Freddys 2 (MEGA)</option>
+            <option value="https://ouo.io/4QbZoY">Five Nights at Freddys 3 (Media Fire)</option>
+            <option value="https://ouo.io/oo5i8R">Five Nights at Freddys 3 (MEGA)</option>
+            <option value="https://ouo.io/R2xmjn">Five Nights at Freddys 4 (Media Fire)</option>
+            <option value="https://ouo.io/OmYY3d">Five Nights at Freddys 4 (MEGA)</option>
+            <option value="https://ouo.io/SfaDEEy">Five Nights at Freddys - Sister Location (Media Fire)</option>
+            <option value="">Five Nights at Freddys - Sister Location (MEGA)</option>
+            <option value="https://ouo.io/5Bsaed">Five Nights at Freddys - Into the Pit (Media Fire)</option>
+            <option value="https://ouo.io/czhU6N">Five Nights at Freddys - Into the Pit (MEGA)</option>
+        </select>
+    </form>
 
-                    <li>
-Five Nights at Freddys
-                    <button onclick="downloadFile('https://ouo.io/fCZ9l3')">Media Fire</button>  <button onclick="downloadFile('https://ouo.io/yoD5Av')">MEGA</button>
+    <script>
+        function openLink() {
+            var dropdown = document.getElementById("myDropdown");
+            var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+            window.open(selectedValue, '_blank');
+        }
+    </script>
 
-</li>
-                    <li>
-Five Nights at Freddys 2
-                    <button onclick="downloadFile('https://ouo.io/JFXOsH')">Media Fire</button>  <button onclick="downloadFile('https://ouo.io/3WcdGTP')">MEGA</button>
-
-</li>
-
-                        <li>
-Five Nights at Freddys 3
-                    <button onclick="downloadFile('https://ouo.io/4QbZoY')">Media Fire</button>  <button onclick="downloadFile('https://ouo.io/oo5i8R')">MEGA</button>
-
-</li>
-                    <li>
-Five Nights at Freddys 4 + Halloween Edition DLC
-                    <button onclick="downloadFile('https://ouo.io/R2xmjn')">Media Fire</button>  <button onclick="downloadFile('https://ouo.io/OmYY3d')">MEGA</button>
-
-</li>
-
-                        <li>
-Five Nights at Freddys - Sister Location
-                    <button onclick="downloadFile('https://ouo.io/SfaDEEy')">Media Fire</button>  <button onclick="downloadFile('')">MEGA</button>
-
-</li>
-
-                        <li>
-Five Nights at Freddys - Into the Pit
-                    <button onclick="downloadFile('https://ouo.io/5Bsaed')">Media Fire</button>  <button onclick="downloadFile('')">MEGA</button>
-
-</li>
 
 <br>
 </br>
